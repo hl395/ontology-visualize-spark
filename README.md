@@ -13,3 +13,7 @@ sudo apt install libxml2-dev libz-dev
 That should be all. We can now install igraph for Python 3:
 sudo pip3 install python-igraph
 
+
+
+conda env export -n name > name.yml
+conda env upload my-environment
