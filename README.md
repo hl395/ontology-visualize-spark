@@ -1,7 +1,7 @@
 # ontology-visualize-spark
 Course project for CS786 Special Topics: Parallel Computing for Multicore Systems
 
-
+The goal of this project is to utilize Spark’s[3] resilient distributed dataset (RDD)[2] feature to store ontology class-restriction topology information, and employ the build in batch operations to facilitate graph computations, such as multiple route identification, subgraph, group coloring. In addition, the data wrapper/holder -- RDDs can be used as input to graph plot tool to draw 3D graphs for better ontology visualization.
 
 readlink -f /usr/bin/java | sed "s:bin/java::"
 
