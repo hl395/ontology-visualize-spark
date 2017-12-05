@@ -17,3 +17,96 @@ sudo pip3 install python-igraph
 
 conda env export -n name > name.yml
 conda env upload my-environment
+
+
+hao@hao-OptiPlex-7010:~$ cat /proc/cpuinfo | grep 'model name' | uniq
+model name	: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+hao@hao-OptiPlex-7010:~$ cat /proc/cpuinfo | grep processor
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+processor	: 4
+processor	: 5
+processor	: 6
+processor	: 7
+hao@hao-OptiPlex-7010:~$ sudo lshw -C memory
+  *-firmware              
+       description: BIOS
+       vendor: Dell Inc.
+       physical id: 0
+       version: A05
+       date: 07/31/2012
+       size: 64KiB
+       capacity: 13MiB
+       capabilities: pci pnp upgrade shadowing cdboot bootselect edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer acpi usb biosbootspecification netboot uefi
+  *-cache:0
+       description: L1 cache
+       physical id: 38
+       slot: CPU Internal L1
+       size: 256KiB
+       capacity: 256KiB
+       capabilities: internal write-through data
+       configuration: level=1
+  *-cache:1
+       description: L2 cache
+       physical id: 39
+       slot: CPU Internal L2
+       size: 1MiB
+       capacity: 1MiB
+       capabilities: internal write-through unified
+       configuration: level=2
+  *-cache:2
+       description: L3 cache
+       physical id: 3a
+       slot: CPU Internal L3
+       size: 8MiB
+       capacity: 8MiB
+       capabilities: internal write-back unified
+       configuration: level=3
+  *-memory
+       description: System Memory
+       physical id: 3b
+       slot: System board or motherboard
+       size: 16GiB
+     *-bank:0
+          description: DIMM DDR3 Synchronous 1600 MHz (0.6 ns)
+          product: M378B5273DH0-CK0
+          vendor: Samsung
+          physical id: 0
+          serial: 1160F37D
+          slot: ChannelA-DIMM0
+          size: 4GiB
+          width: 64 bits
+          clock: 1600MHz (0.6ns)
+     *-bank:1
+          description: DIMM DDR3 Synchronous 1600 MHz (0.6 ns)
+          product: M378B5273DH0-CK0
+          vendor: Samsung
+          physical id: 1
+          serial: 1160F37C
+          slot: ChannelA-DIMM1
+          size: 4GiB
+          width: 64 bits
+          clock: 1600MHz (0.6ns)
+     *-bank:2
+          description: DIMM DDR3 Synchronous 1600 MHz (0.6 ns)
+          product: M378B5273DH0-CK0
+          vendor: Samsung
+          physical id: 2
+          serial: 1160F377
+          slot: ChannelB-DIMM0
+          size: 4GiB
+          width: 64 bits
+          clock: 1600MHz (0.6ns)
+     *-bank:3
+          description: DIMM DDR3 Synchronous 1600 MHz (0.6 ns)
+          product: M378B5273DH0-CK0
+          vendor: Samsung
+          physical id: 3
+          serial: 1160F381
+          slot: ChannelB-DIMM1
+          size: 4GiB
+          width: 64 bits
+          clock: 1600MHz (0.6ns)
+ 
