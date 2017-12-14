@@ -1,21 +1,7 @@
-\markboth{September~2017}
-{\MakeLowercase}
+# Abstract
 
-\IEEEtitleabstractindextext{%
-\begin{abstract}
 Large-scale graph analytics has become a quickly growing research area. “Big” graphs, such as social networks, mobile networks and biological networks, can easily reach size of millions of vertices and billions of edges. Given this size of problem, practical graph mining algorithms tend to execute their computations in distributed fashion. Various distributed systems have been adopted for distributing graph processing. Although many of these systems have vastly simplified the implementation of certain graph processing algorithms, a clear guideline and comparison between existing graph processing frameworks is still missing. Also, how to configure and tune these distributed systems to achieve the best outcome and efficiency, in terms of parallelism and resource allocation, has remained unknown. In this report we survey a few most active systems that focus on distributed graph processing. In addition, we experiment a set of carefully constructed benchmark tasks on Apache Spark, a widely used distributed data-flow system, to provide deep analysis and insight understanding of state-of-art distributed graph processing system. We hope our work can further guide application implementations on Apache Spark and uncover some open research areas associated with it. All the work in this report is available at https://github.com/hl395/ontology-visualize-spark.
-\end{abstract}
 
-% Note that keywords are not normally used for peerreview papers.
-\begin{IEEEkeywords}
-graph mining, distributed system, ontology, Spark.
-\end{IEEEkeywords}}
-
-\maketitle
-
-\IEEEdisplaynontitleabstractindextext
-
-\IEEEpeerreviewmaketitle
 
 # Introduction
 
@@ -457,13 +443,7 @@ processing systems.
 The author would like to thank Prof. Jing Li for her guidance and help
 in the processing of implementing this project.
 
-\ifCLASSOPTIONcaptionsoff
 
-\newpage
-
-\fi
-
-<span>1</span>
 
 \bibitem{biological}
 
